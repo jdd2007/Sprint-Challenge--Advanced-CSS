@@ -134,8 +134,9 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Unbuntu', sans-serif;
   color: #5E6164;
+  text-decoration: none;
 }
 h1,
 h2,
@@ -162,10 +163,11 @@ p {
 }
 .nav {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   background-color: #F6F6F6;
-  padding: 0.8rem 0 1.8rem 0;
+  padding: 2.4rem 0 1.8rem 0;
 }
 .nav h1 {
   font-size: 3.2rem;
@@ -173,15 +175,23 @@ p {
 .nav .navlinks {
   display: flex;
   justify-content: space-between;
-  font-size: 2.5 rem;
   line-height: 1.4;
   width: 50%;
+  max-width: 400px;
+  margin-top: 10px;
+}
+@media (max-width: 500px) {
+  .nav .navlinks {
+    width: 100%;
+  }
 }
 .nav .navlinks .navlink {
   margin: 5px 10px 5px 10px;
+  font-family: 'Unbuntu', sans-serif;
+  color: #5E6164;
   text-decoration: none;
-  font-family: 'Ubuntu', sans-serif;
   color: #23293B;
+  font-size: 1.6rem;
 }
 @media (max-width: 500px) {
   .nav .navlinks .navlink {
